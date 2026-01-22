@@ -1,46 +1,291 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Damascus Maker · Support</title>
-    <link rel="stylesheet" href="/styles.css" />
+
+    <title>Damascus Maker — Design & Preview Damascus Patterns (iOS)</title>
+    <meta
+      name="description"
+      content="Damascus Maker is an offline iPhone/iPad app to design Damascus-style pattern recipes with rendered previews, browse variants, save to a local library, export PNGs, and reference quench tables."
+    />
+    <link rel="canonical" href="https://wangningengineer.github.io/damascus-maker/support.html" />
+
+    <meta name="theme-color" content="#0b1221" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png?v=20260122" />
+    <link rel="icon" href="favicon-120.png?v=20260122" type="image/png" sizes="120x120" />
+    <link rel="icon" href="favicon-58.png?v=20260122" type="image/png" sizes="58x58" />
+    <link rel="icon" href="favicon-40.png?v=20260122" type="image/png" sizes="40x40" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Damascus Maker" />
+    <meta
+      property="og:description"
+      content="Design and preview Damascus patterns. Browse variants, apply edits, save to a library, and export PNGs — offline-first."
+    />
+    <meta property="og:url" content="https://wangningengineer.github.io/damascus-maker/support.html" />
+    <meta
+      property="og:image"
+      content="https://wangningengineer.github.io/damascus-maker/assets/dm-hero-illustration.webp"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="stylesheet" href="landing.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Damascus Maker",
+        "operatingSystem": "iOS",
+        "applicationCategory": "DesignApplication",
+        "url": "https://wangningengineer.github.io/damascus-maker/support.html",
+        "downloadUrl": "https://apps.apple.com/us/app/damascus-maker/id6757137510",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    </script>
   </head>
+
   <body>
-    <main class="container">
-      <h1>Damascus Maker · Support</h1>
-      <p class="small">App Support Center</p>
+    <a class="skip" href="#main">Skip to content</a>
 
-      <h2>Overview</h2>
-      <p>
-        Damascus Maker helps you create and preview Damascus-style pattern recipes. The app is designed to work offline. It does
-        not require an account, does not include ads, and does not transmit your recipes or inputs to any server.
-      </p>
-
-      <h2>Key Facts (for App Review)</h2>
-      <ul>
-        <li><strong>Offline only:</strong> no cloud sync and no server connections are required for core features.</li>
-        <li><strong>No data collection:</strong> the app does not collect personal information, identifiers, or usage analytics for the developer.</li>
-        <li><strong>No tracking:</strong> the app does not use advertising or tracking SDKs.</li>
-        <li><strong>Local storage:</strong> your settings and/or saved recipes (if any) are stored locally on your device.</li>
-      </ul>
-
-      <h2>FAQ</h2>
-      <ul>
-        <li><strong>Does the app need the internet?</strong> No. The app works offline.</li>
-        <li><strong>Does the app collect data?</strong> No. The app does not collect or transmit your personal data.</li>
-        <li><strong>Does the app store anything?</strong> Saved settings/recipes (if you choose to save) stay on your device.</li>
-      </ul>
-
-      <h2>Contact</h2>
-      <p>
-        If you need help or want to report a bug, email
-        <a href="mailto:wangning.engineer@outlook.com">wangning.engineer@outlook.com</a>.
-      </p>
-
-      <div class="footer">
-        <a href="/">Back to Home</a>
+    <header class="topbar">
+      <div class="container">
+        <div class="row">
+          <a class="brand" href="support.html" aria-label="Damascus Maker">
+            <span class="logo" aria-hidden="true"></span>
+            <b>Damascus Maker</b>
+          </a>
+          <nav class="nav" aria-label="Primary">
+            <a href="#features">Features</a>
+            <a href="#tutorial">Tutorial</a>
+            <a href="#faq">FAQ</a>
+            <a href="#download">Download</a>
+            <a href="privacy.html">Privacy</a>
+          </nav>
+        </div>
       </div>
+    </header>
+
+    <main id="main" class="container">
+      <section class="hero">
+        <div class="heroGrid">
+          <div>
+            <div class="kicker">
+              <span class="badge">Offline • No account • No ads</span>
+              <span>Pattern design for bladesmiths</span>
+            </div>
+            <h1>Design Damascus patterns. Preview variants. Export clean PNGs.</h1>
+            <p class="lead">
+              Damascus Maker is a pattern design tool that helps you create and iterate Damascus-style pattern “recipes” with
+              rendered previews. Build a recipe step‑by‑step, browse multiple variants, apply the best one back into the design,
+              save to a local library, and export/share a high-quality PNG.
+            </p>
+
+            <div class="ctaRow" id="download">
+              <a
+                class="btn btnPrimary"
+                href="https://apps.apple.com/us/app/damascus-maker/id6757137510"
+                target="_blank"
+                rel="noopener"
+              >
+                View on the App Store
+              </a>
+              <a class="btn btnGhost" href="#tutorial">See the workflow</a>
+              <a class="btn btnGhost" href="mailto:wangning.engineer@outlook.com">Contact support</a>
+            </div>
+          </div>
+
+          <div class="heroCard" aria-label="App preview">
+            <div class="heroCardInner">
+              <img
+                class="heroMedia"
+                src="assets/dm-hero-illustration.webp"
+                alt="Illustration of Damascus pattern layers and a pattern preview UI"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <h2>What you can do</h2>
+        <p>Make pattern exploration faster, more repeatable, and easier to share.</p>
+
+        <div class="grid3" role="list">
+          <div class="card" role="listitem">
+            <h3>Guided design workflow</h3>
+            <p>Build a pattern recipe step-by-step with a preview that updates as you go.</p>
+          </div>
+          <div class="card" role="listitem">
+            <h3>Browse variants</h3>
+            <p>Generate and compare multiple outcomes, then pick the best direction.</p>
+          </div>
+          <div class="card" role="listitem">
+            <h3>Apply & keep editing</h3>
+            <p>Select a variant and apply it back into your editable steps to iterate quickly.</p>
+          </div>
+          <div class="card" role="listitem">
+            <h3>Local recipe library</h3>
+            <p>Save designs with thumbnails and reopen them later — offline.</p>
+          </div>
+          <div class="card" role="listitem">
+            <h3>Export PNG</h3>
+            <p>Share, export to Files, or save to Photos — useful for planning and documentation.</p>
+          </div>
+          <div class="card" role="listitem">
+            <h3>Quench reference</h3>
+            <p>Built-in heat treat reference table for quick checks while you’re in the shop.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="tutorial" class="section">
+        <h2>Quick tutorial</h2>
+        <p>A simple flow to go from idea → preview → exported image.</p>
+
+        <div class="split">
+          <div class="figure">
+            <img
+              src="assets/dm-screenshot-wizard.png"
+              alt="Design workflow screenshot"
+              loading="lazy"
+              onerror="this.style.display='none'"
+            />
+            <div class="figcap">Screenshot: Design/Wizard — add <span class="kbd">assets/dm-screenshot-wizard.png</span></div>
+          </div>
+          <div class="steps" aria-label="Steps">
+            <div class="step">
+              <div class="stepNum">1</div>
+              <div>
+                <b>Design</b>
+                Use the guided workflow to build your recipe and watch the preview update.
+              </div>
+            </div>
+            <div class="step">
+              <div class="stepNum">2</div>
+              <div>
+                <b>Browse variants</b>
+                Compare multiple generated outcomes and pick a direction.
+              </div>
+            </div>
+            <div class="step">
+              <div class="stepNum">3</div>
+              <div>
+                <b>Apply & refine</b>
+                Apply a variant back into the steps and continue editing for repeatable iteration.
+              </div>
+            </div>
+            <div class="step">
+              <div class="stepNum">4</div>
+              <div>
+                <b>Save & export</b>
+                Save to Library and export a PNG to share or reference during forging.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="split" style="margin-top: 14px">
+          <div class="figure">
+            <img
+              src="assets/dm-screenshot-variants.png"
+              alt="Variants browsing screenshot"
+              loading="lazy"
+              onerror="this.style.display='none'"
+            />
+            <div class="figcap">Screenshot: Variants — add <span class="kbd">assets/dm-screenshot-variants.png</span></div>
+          </div>
+          <div class="figure">
+            <img
+              src="assets/dm-screenshot-library.png"
+              alt="Recipe library screenshot"
+              loading="lazy"
+              onerror="this.style.display='none'"
+            />
+            <div class="figcap">Screenshot: Library — add <span class="kbd">assets/dm-screenshot-library.png</span></div>
+          </div>
+        </div>
+
+        <div class="split" style="margin-top: 14px">
+          <div class="figure">
+            <img
+              src="assets/dm-screenshot-export.png"
+              alt="Export PNG screenshot"
+              loading="lazy"
+              onerror="this.style.display='none'"
+            />
+            <div class="figcap">Screenshot: Export — add <span class="kbd">assets/dm-screenshot-export.png</span></div>
+          </div>
+          <div class="figure">
+            <img
+              src="assets/dm-screenshot-quench.png"
+              alt="Quench reference screenshot"
+              loading="lazy"
+              onerror="this.style.display='none'"
+            />
+            <div class="figcap">Screenshot: Quench — add <span class="kbd">assets/dm-screenshot-quench.png</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section">
+        <h2>FAQ</h2>
+        <div class="faq">
+          <details>
+            <summary>Does it work offline?</summary>
+            <p>Yes. Pattern generation and rendering are performed on-device.</p>
+          </details>
+          <details>
+            <summary>Does it collect any data?</summary>
+            <p>No ads, no tracking SDKs. See the full <a href="privacy.html">Privacy Policy</a>.</p>
+          </details>
+          <details>
+            <summary>How do I share a design?</summary>
+            <p>Export a PNG and share via Files/Photos or your preferred apps.</p>
+          </details>
+          <details>
+            <summary>Support / contact</summary>
+            <p>Email <a href="mailto:wangning.engineer@outlook.com">wangning.engineer@outlook.com</a>.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Download</h2>
+        <p>Install on iPhone or iPad.</p>
+        <div class="ctaRow" style="margin-top: 12px">
+          <a
+            class="btn btnPrimary"
+            href="https://apps.apple.com/us/app/damascus-maker/id6757137510"
+            target="_blank"
+            rel="noopener"
+          >
+            Open App Store
+          </a>
+          <a class="btn btnGhost" href="privacy.html">Privacy policy</a>
+          <a class="btn btnGhost" href="/">Site home</a>
+        </div>
+      </section>
     </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footerRow">
+          <div class="small">© <span data-year></span> Damascus Maker</div>
+          <div class="small">
+            <a href="mailto:wangning.engineer@outlook.com">wangning.engineer@outlook.com</a>
+            · <a href="privacy.html">Privacy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script defer src="landing.js"></script>
   </body>
 </html>

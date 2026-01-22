@@ -1,0 +1,120 @@
+:root{
+  --bg0:#06080f;
+  --bg1:#0b1020;
+  --text:rgba(255,255,255,.92);
+  --muted:rgba(255,255,255,.72);
+  --muted2:rgba(255,255,255,.55);
+  --card:rgba(255,255,255,.06);
+  --border:rgba(255,255,255,.12);
+  --shadow:0 22px 65px rgba(0,0,0,.45);
+  --brand:#fb7185;
+  --brand2:#f59e0b;
+  --maxw:1100px;
+  --r:18px;
+}
+@media (prefers-color-scheme: light){
+  :root{
+    --bg0:#fbfbff;
+    --bg1:#ffffff;
+    --text:rgba(12,18,33,.92);
+    --muted:rgba(12,18,33,.72);
+    --muted2:rgba(12,18,33,.55);
+    --card:rgba(12,18,33,.04);
+    --border:rgba(12,18,33,.10);
+    --shadow:0 18px 45px rgba(10,18,30,.12);
+    --brand:#e11d48;
+    --brand2:#d97706;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  color:var(--text);
+  background:
+    radial-gradient(1100px 560px at 15% 0%, rgba(251,113,133,.22), transparent 55%),
+    radial-gradient(1000px 560px at 85% 0%, rgba(245,158,11,.18), transparent 55%),
+    linear-gradient(180deg, var(--bg0), var(--bg1));
+}
+a{color:inherit}
+.container{max-width:var(--maxw); margin:0 auto; padding:0 18px}
+
+.skip{position:absolute; top:-44px; left:12px; padding:8px 10px; border-radius:10px; border:1px solid var(--border); background:var(--bg1); z-index:999}
+.skip:focus{top:12px; outline:none; box-shadow:0 0 0 4px rgba(251,113,133,.25)}
+
+.topbar{position:sticky; top:0; z-index:50; backdrop-filter:saturate(180%) blur(12px); border-bottom:1px solid var(--border);
+  background:linear-gradient(180deg, rgba(0,0,0,.32), rgba(0,0,0,.10));
+}
+@media (prefers-color-scheme: light){.topbar{background:linear-gradient(180deg, rgba(255,255,255,.70), rgba(255,255,255,.45));}}
+.topbar .row{display:flex; gap:12px; align-items:center; padding:12px 0}
+.brand{display:flex; gap:10px; align-items:center; text-decoration:none}
+.logo{width:34px; height:34px; border-radius:10px; background:linear-gradient(135deg, rgba(251,113,133,.92), rgba(245,158,11,.82)); box-shadow:0 10px 34px rgba(251,113,133,.16)}
+.brand b{letter-spacing:.2px}
+.nav{margin-left:auto; display:flex; gap:14px; flex-wrap:wrap}
+.nav a{text-decoration:none; color:var(--muted); font-size:14px; padding:6px 10px; border-radius:999px}
+.nav a:hover{background:var(--card); color:var(--text)}
+
+.hero{padding:54px 0 28px}
+.heroGrid{display:grid; grid-template-columns:1.1fr .9fr; gap:22px; align-items:center}
+@media (max-width: 900px){.heroGrid{grid-template-columns:1fr;}}
+.badge{display:inline-flex; padding:4px 10px; border-radius:999px; border:1px solid var(--border);
+  background:linear-gradient(135deg, rgba(251,113,133,.20), rgba(245,158,11,.16));
+  font-size:12px;
+}
+.kicker{display:flex; gap:10px; align-items:center; color:var(--muted); font-size:13px}
+
+h1{font-size:44px; line-height:1.05; margin:12px 0 10px; letter-spacing:-.7px}
+@media (max-width: 900px){h1{font-size:36px}}
+.lead{color:var(--muted); font-size:17px; line-height:1.65; margin:0 0 18px}
+
+.ctaRow{display:flex; gap:10px; flex-wrap:wrap; align-items:center}
+.btn{display:inline-flex; align-items:center; justify-content:center; gap:10px; padding:11px 14px; border-radius:12px; border:1px solid var(--border); text-decoration:none; font-weight:650}
+.btnPrimary{background:linear-gradient(135deg, rgba(251,113,133,.92), rgba(245,158,11,.80)); color:rgba(10,18,30,.92); border-color:transparent}
+.btnGhost{background:var(--card)}
+
+.heroCard{background:linear-gradient(180deg, var(--card), transparent); border:1px solid var(--border); border-radius:var(--r); box-shadow:var(--shadow); overflow:hidden}
+.heroCardInner{padding:14px}
+.heroMedia{width:100%; aspect-ratio:16/10; object-fit:cover; border-radius:14px; border:1px solid var(--border);
+  background:
+    radial-gradient(420px 250px at 28% 38%, rgba(251,113,133,.24), transparent 60%),
+    radial-gradient(360px 250px at 72% 38%, rgba(245,158,11,.20), transparent 60%),
+    linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+}
+.note{color:var(--muted2); font-size:13px; line-height:1.5; margin:10px 0 0}
+
+.section{padding:34px 0}
+.section h2{font-size:26px; margin:0 0 10px; letter-spacing:-.3px}
+.section p{color:var(--muted); line-height:1.7; margin:0}
+
+.grid3{display:grid; grid-template-columns:repeat(3, 1fr); gap:12px; margin-top:14px}
+@media (max-width:900px){.grid3{grid-template-columns:1fr;}}
+.card{background:var(--card); border:1px solid var(--border); border-radius:var(--r); padding:16px}
+.card h3{margin:0 0 6px; font-size:16px}
+.card p{margin:0; color:var(--muted); font-size:14px; line-height:1.6}
+
+.split{display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:14px}
+@media (max-width:900px){.split{grid-template-columns:1fr;}}
+.figure{width:100%; border-radius:16px; border:1px solid var(--border); background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02)); overflow:hidden}
+.figure img{width:100%; height:auto; display:block}
+.figcap{padding:10px 12px; color:var(--muted2); font-size:13px; line-height:1.5}
+
+.steps{margin-top:12px; display:grid; gap:10px}
+.step{display:flex; gap:12px; align-items:flex-start; padding:14px; border-radius:16px; border:1px solid var(--border); background:var(--card)}
+.stepNum{width:30px; height:30px; border-radius:10px; display:flex; align-items:center; justify-content:center;
+  background:linear-gradient(135deg, rgba(251,113,133,.22), rgba(245,158,11,.16)); border:1px solid var(--border); font-weight:700}
+.step b{display:block; margin-bottom:3px}
+.step div{color:var(--muted); line-height:1.55; font-size:14px}
+
+.faq{margin-top:12px; display:grid; gap:10px}
+.faq details{border:1px solid var(--border); border-radius:16px; background:var(--card); padding:12px 14px}
+.faq summary{cursor:pointer; font-weight:650}
+.faq p{margin:8px 0 0}
+
+.footer{padding:26px 0 40px; border-top:1px solid var(--border); color:var(--muted2)}
+.footerRow{display:flex; gap:12px; flex-wrap:wrap; align-items:center; justify-content:space-between}
+.footer a{color:var(--muted); text-decoration:none}
+.footer a:hover{text-decoration:underline}
+.small{font-size:13px; color:var(--muted2)}
+.kbd{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size:12px; padding:2px 6px; border-radius:8px; border:1px solid var(--border); background:rgba(255,255,255,.06)}
